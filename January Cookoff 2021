@@ -1,4 +1,4 @@
-DIVISION 3 - 
+DIVISION 3 - PROBLEMS TO BE TAKEN FROM - https://www.codechef.com/COOK126C
 PROBLEM 1  - 
 #include<bits/stdc++.h>
 using namespace std;
@@ -98,6 +98,51 @@ int main()
 }
 
 PROBLEM 3 - 
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  const int N = 1000001;
+  bool p[N];
+  memset(p,true,sizeof(p));
+  for(int i=2;i*i<=N;i++)
+  {
+    if(p[i])
+    {
+      for(int j=i*i;j<=N;j=j+i)
+      {
+        p[j] = false;
+      }
+    }
+  }
+
+  
+
+  int ans[N] = {0};
+  int count = 0;
+  for(int i=5;i<=1000001;i++)
+  {
+    if(p[i] and p[i-2])
+    {
+      count++;
+    }
+    ans[i] = count;
+  }
+
+
+
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    int n;
+    cin>> n;
+    cout << ans[n] << endl;
+  }
+  return 0;
+}
+
+
 PROBLEM 4 - 
 PROBLEM 5 - 
 PROBLEM 6 - 
