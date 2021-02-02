@@ -1,0 +1,84 @@
+PROBLEM 1 - 
+#include<iostream>
+using namespace std;
+int main()
+ {
+     int T;
+     cin>>T;
+     while(T--)
+     {
+         int a,b,c;
+         cin >> a >> b >> c;
+         
+         if(a+b==c || b+c==a || a+c==b)
+         {
+             cout<<"YES"<<endl;
+         }
+        else
+        {
+            cout << "NO" << endl;
+        } 
+     }
+	//code
+	return 0;
+}
+
+LEARNINGS - 
+1. Easy problem but be attentive.
+
+PROBLEM 2 - 
+#include<bits/stdc++.h>
+using namespace std;
+void solve()
+{
+  int N,A[501];
+  cin >> N;
+  for(int i=0;i<N;i++)
+  {
+    cin >> A[i];
+  }
+  int eve = 0,odd = 0;
+  if(N != 1)
+  {
+    for(int i=0;i<N;i++)
+   {
+    if(A[i]%2==0)
+    {
+      eve++;
+    }
+    else 
+    {
+      odd++;
+    }
+   }
+  }
+  if(eve>=odd)
+  {
+    cout << odd;
+  }
+  else if(eve<odd)
+  {
+    cout << eve;
+  }
+}
+int main()
+{
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    solve();
+    cout << "\n";
+  }
+}
+
+LEARNINGS - 
+1. If we want calculate the difference between the two numbers and we want that difference to be a even number then both the numbers should be either a even number or a odd number.
+
+
+PROBLEM 3 - 
+
+
+
+LEARNINGS - 
+
