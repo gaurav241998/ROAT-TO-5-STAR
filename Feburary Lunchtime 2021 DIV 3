@@ -35,3 +35,61 @@ ALWAYS SEE THE WHAT THE CONSTRAINTS FIRST.
 
 PROBLEM 2 - 
 SOLUTION - 
+#include<bits/stdc++.h>
+using namespace std;
+
+void solve()
+{
+   int A[11];
+   for(int i=0;i<10;i++)
+   {
+     cin >> A[i];
+   }
+   int K;
+   cin >> K;
+   for(int i=9;i>=0;i--)
+   {
+     if(A[i]>K)
+     {
+       cout << i+1;
+       break;
+     }
+     K =  K-A[i];
+   }
+}
+int main()
+{
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    solve();
+    cout << "\n";
+  }
+  return 0;
+}
+LEARNINGS - 
+NO LEARNINGS
+PROBLEM 3 - 
+SOLUTION -
+LEARNINGS - 
+
+
+PROBLEM 4 - 
+SOLUTION - 
+LEARNINGS -
+
+
+PROBLEM 5 - 
+SOLUTION - 
+LEARNINGS -
+
+
+PROBLEM 6 - 
+SOLUTION - 
+LEARNINGS -
+
+
+PROBLEM 7 - 
+SOLUTION - 
+
