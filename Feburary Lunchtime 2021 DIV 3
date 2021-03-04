@@ -72,7 +72,54 @@ LEARNINGS -
 NO LEARNINGS
 PROBLEM 3 - 
 SOLUTION -
+first of all we will find the first prime number greater than 1000000
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isprime(int ans)
+{
+  for(int i=2;i*i<=ans;i++)
+  {
+    if(ans%i==0)
+    return false;
+  }
+  return true;
+}
+
+int main()
+{
+  int ans = 1000000;
+  while(1)
+  {
+    if(isprime(ans))
+      break;
+    ans++;
+    
+  }
+  cout << ans;
+}
+
+then we will do the code of the question just printing the number we have found earlier - 
+#include<bits/stdc++.h>
+using namespace std;
+void solve()
+{
+  int L,R;
+  cin >> L >> R;
+  cout << 1000003;
+}
+int main()
+{
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    solve();
+    cout << "\n";
+  }
+}
 LEARNINGS - 
+NO LEARNINGS
 
 
 PROBLEM 4 - 
