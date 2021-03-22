@@ -1,0 +1,42 @@
+MY SOLUTION - 
+#include<bits/stdc++.h>
+using namespace std;
+
+void solve()
+{
+  long long C,low,high;
+  cin >> C;
+  long long d = log2(C);
+  //cout << d << "\n";
+  d = d+1;
+  //cout << d << "\n";
+  long long c = pow(2,d);
+  //cout << c << "\n";
+  c=c-1;
+  long long sum;
+  //cout << (low^high) << "\n";
+  high = (c+1)/2;
+  low = C-high;
+  sum = (c-low)*(c-high);
+  if(C==1)
+  {
+   cout << 0;
+  }
+  else 
+  {
+    cout << sum;
+  }
+}
+int main()
+{
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    solve();
+    cout << "\n";
+  }
+  return 0;
+}
+
+CODECHEF SOLUTION - 
