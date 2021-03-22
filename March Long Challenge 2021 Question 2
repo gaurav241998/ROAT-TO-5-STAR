@@ -1,0 +1,42 @@
+MY SOLUTION -
+#include<bits/stdc++.h>
+using namespace std;
+void solve()
+{
+  string S;
+  cin >> S;
+  int prev=0,count;
+  int next=prev+1;
+  if(S[prev]== 48)
+  {
+    count = 0;
+  }
+  else if(S[prev] == 49)
+  {
+    count = 1;
+  }
+  while(S[next]!='\0')
+  {
+    if(S[prev]==48 && S[next]==49)
+    {
+      count++;
+    }
+    prev++;
+    next = prev+1;
+  }
+  cout << count;
+}
+int main()
+{
+  int T;
+  cin >> T;
+  while(T--)
+  {
+    solve();
+    cout << "\n";
+  }
+}
+
+
+CODECHEF SOLUTION - 
+NO NEED TO PUT HERE COMPLEX THEN MY SOLUTION
